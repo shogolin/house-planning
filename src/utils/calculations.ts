@@ -61,4 +61,3 @@ export function roundToDecimal(value: number, decimals: number = 2): number {
   return Math.round(value * factor) / factor;
 }
 
-

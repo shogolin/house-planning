@@ -52,6 +52,7 @@ npm run dev
 - **Language**: TypeScript
 - **Styling**: CSS Modules
 - **Graphics**: SVG (HTML5 inline SVG)
+- **Linting**: ESLint
 
 ## プロジェクト構造
 
@@ -74,7 +75,12 @@ house-planning/
 │   ├── main.tsx              # エントリーポイント
 │   └── styles.css            # スタイル
 ├── .cursorrules              # Cursor用プロジェクト定義
-└── package.json
+├── .eslintrc.cjs            # ESLint設定
+├── .gitignore               # Git除外設定
+├── package.json             # 依存関係とスクリプト
+├── tsconfig.json            # TypeScript設定
+├── vite.config.ts           # Vite設定
+└── README.md                # このファイル
 ```
 
 ## 単位系と座標
@@ -91,16 +97,30 @@ house-planning/
 - ✅ リアルタイム反映（Vite HMR）
 - ✅ 複数プランの比較
 
-## ビルド
+## 開発コマンド
+
+### ビルド
 
 ```bash
 npm run build
 ```
 
-## プレビュー
+### プレビュー
 
 ```bash
 npm run preview
 ```
+
+### リント（コード品質チェック）
+
+```bash
+npm run lint
+```
+
+## コード品質
+
+- TypeScriptの厳密な型チェック
+- ESLintによるコード品質チェック
+- 統一されたコードフォーマット
 
 

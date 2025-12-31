@@ -55,4 +55,3 @@ export function Grid({ width, height, gridSize = 910 }: GridProps) {
   return <g>{lines}</g>;
 }
 
-

@@ -62,4 +62,3 @@ function calculateBounds(rooms: Room[]): { width: number; height: number } {
   };
 }
 
-

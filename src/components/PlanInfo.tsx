@@ -55,4 +55,3 @@ export function PlanInfo({ rooms, planName }: PlanInfoProps) {
   );
 }
 
-
